@@ -1,2 +1,2 @@
-# my_ortfolio
+# my_portfolio
 My portfolio website.
