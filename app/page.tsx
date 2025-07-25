@@ -7,6 +7,7 @@ import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import MouseGradientBackground from '@/components/MouseGradientBackground'
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -27,7 +28,7 @@ export default function Home() {
 
   return (
     <section className="w-full h-screen flex justify-center px-4 lg:px-0">
-
+      <MouseGradientBackground/>
       <div className='w-full lg:w-[1200px] flex flex-col lg:flex-row lg:justify-between'>
           
         <div className='w-full lg:w-[400px] h-full py-16 lg:py-24 flex justify-center '>
