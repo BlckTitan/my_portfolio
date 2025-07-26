@@ -35,6 +35,9 @@ body::selection{
   background-color: var(--tag-foreground);
   color: #fff;
 }
+.avatarContainer{
+  background-color: var(--foreground);
+}
 nav > a{
   display: flex;
   align-items: center;
@@ -70,4 +73,12 @@ div.social_links i{
 }
 div.social_links{
   color: var(--foreground);
+}
+div.about p{
+  line-height: 1.9;
+  margin-bottom: 1rem;
+}
+div.about b{
+  font-weight: bolder;
+  color: var(--tag-foreground);
 }

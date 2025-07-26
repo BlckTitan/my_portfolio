@@ -1,26 +1,25 @@
 import React from 'react'
+import Avatar from '../public/freePik_Avatar.png'
+import Image from 'next/image'
 
 export default function Hero() {
   return (
     <section>
-      <div>
-        
-        <p>
-          I&apos;m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. 
-          My favorite work lies at the intersection of design and development, 
-          creating experiences that not only look great but are meticulously built for performance and usability. Currently, I'm a Senior Front-End Engineer at Klaviyo, 
-          specializing in accessibility. I contribute to the creation and maintenance of UI components that power Klaviyo&apos;s frontend, 
-          ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.
-          In the past, I've had the opportunity to develop software across a variety of settings — from advertising agencies and large corporations to start-ups and 
-          small digital product studios. Additionally, I also released a comprehensive video course a few years ago, guiding learners through 
-          building a web app with the Spotify API. In my spare time, I&apos;m usually climbing, reading, hanging out with my wife and two cats, 
-          or running around Hyrule searching for Korok seeds.
-        </p>
 
-        <h1>Victor Ugorji</h1>
-        <h2>I build things for the web.</h2>
-        <p>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.</p>
+      <div className='w-full h-fit flex justify-center items-center mb-4'>
+        <div className='avatarContainer w-full lg:w-[250px] h-[250px] flex justify-end items-center rounded-full'>
+          <Image
+            src={Avatar}
+            alt='type: PNG description: an avatar depicting the frontend engineer, Ugorji Eze Victor'
+            className='w-full h-[300px] object-cover object-left'
+          />
+        </div>
       </div>
+
+      <div className='text-3xl lg:text-3xl font-bold lg:font-extrabold text-white'>UGORJI EZE VICTOR</div>
+      <h1 className='my-4 font-bold text-xl lg:text-2xl text-white'>Frontend Engineer</h1>
+      <p className='w-full lg:w-[350px] text-base font-medium'> I build accessible, pixel-perfect digital experiences for the web.</p>
+
     </section>
   )
 }

@@ -1,6 +1,5 @@
 'use client'
 
-import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
@@ -28,19 +27,39 @@ export default function Home() {
 
   return (
     <section className="w-full h-screen flex justify-center px-4 lg:px-0">
+      
       <MouseGradientBackground/>
+
       <div className='w-full lg:w-[1200px] flex flex-col lg:flex-row lg:justify-between'>
           
-        <div className='w-full lg:w-[400px] h-full py-16 lg:py-24 flex justify-center '>
+        <div className='w-full lg:w-[400px] h-full py-16 lg:py-24 flex justify-center'>
           <Navbar hashLink={hashLink}/>
         </div>
 
-        <div className='w-full lg:w-[700px] h-full pt-16 lg:pt-24 '>
+        <div className='w-full lg:w-[700px] h-full pt-16 lg:pt-24'>
 
-          <Hero/>
-          <Footer/>
-          
+          <div id='hero'>
+            <About/>
+          </div>
+
+          <div id='experience'>
+            <Experience/>
+          </div>
+
+          <div id="projects">
+            <Projects/>
+          </div>
+
+          <div id="contact">
+            <Contact/>
+          </div>
+
+          <div id='footer'>
+            <Footer/>
+          </div>
+
         </div>
+
       </div>
         
     </section>
