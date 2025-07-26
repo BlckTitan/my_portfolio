@@ -12,12 +12,10 @@ export default function About() {
       </p>
 
       <p>
-        
         I am adept at collaborating efficiently with other developers and I have a strong verbal communication skill and creativity to match. 
         I have experience with building responsive webpages and webApps and I enjoy spending extra time learning and being mentored. 
         My passion for personal growth and web development means that I can account for my professional growth. 
         <b> I am open to collaborations, volunteering, internships, contract offers, part-time and full-time positions.</b>
-
       </p>
 
     </div>
