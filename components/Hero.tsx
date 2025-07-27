@@ -6,14 +6,15 @@ export default function Hero() {
   return (
     <section>
 
-      <div className='w-full h-fit flex justify-center items-center mb-4'>
-        <div className='avatarContainer w-full lg:w-[250px] h-[250px] flex justify-end items-center rounded-full'>
-          <Image
-            src={Avatar}
-            alt='type: PNG description: an avatar depicting the frontend engineer, Ugorji Eze Victor'
-            className='w-full h-[300px] object-cover object-left'
-          />
-        </div>
+      <div className='w-full h-fit flex justify-center items-center mb-2'>
+        <div 
+          className='bg-[var(--foreground)] absolute -z-10 w-[180px] lg:w-[210px] h-[180px] lg:h-[210px] rounded-full'
+        />
+        <Image
+          src={Avatar}
+          alt='type: PNG description: an avatar depicting the frontend engineer, Ugorji Eze Victor'
+          className='w-[250px] h-[200px] lg:h-[300px] object-cover object-left'
+        />
       </div>
 
       <div className='text-3xl lg:text-3xl font-bold lg:font-extrabold text-white'>UGORJI EZE VICTOR</div>

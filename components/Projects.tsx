@@ -34,7 +34,7 @@ export default function Projects() {
       <div className='w-full flex justify-center items-center flex-wrap h-fit rounded-md bg-[var(--tag-foreground)] px-4 lg:px-24 py-4'>
         {
           stack.map((item) => (
-            <span className='w-fit h-fit px-4 py-2 mt-2 bg-[var(--background)] text-white mr-2 rounded-sm'>{item.stack}</span>
+            <span key={item.id} className='w-fit h-fit px-4 py-2 mt-2 bg-[var(--background)] text-white mr-2 rounded-sm'>{item.stack}</span>
           ))
         }
       </div>

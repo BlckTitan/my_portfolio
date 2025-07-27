@@ -15,6 +15,7 @@ export default function Home() {
   useEffect(() => {
     const handleHashChange = () => {
       setHashLink(window.location.hash)
+      scrollContent(window.location.hash)
     }
 
     window.addEventListener('hashchange', handleHashChange)
@@ -25,6 +26,12 @@ export default function Home() {
     }
   }, [])
 
+  const scrollContent = (hash: any) =>{
+    const result = hash.slice(1);
+
+    result.scrollIntoView()
+  }
+
   return (
     <section className="w-full h-screen flex justify-center px-4 lg:px-0 ">
       
@@ -32,11 +39,11 @@ export default function Home() {
 
       <div className='w-full lg:w-[1200px] relative flex flex-col lg:flex-row lg:justify-between'>
           
-        <div className='w-full lg:w-[400px] h-full fixed py-16 lg:py-24 flex justify-center'>
+        <div className='w-full lg:w-[400px] h-full relative lg:fixed py-16 lg:py-24 flex justify-center'>
           <Navbar hashLink={hashLink}/>
         </div>
 
-        <div className='w-full lg:w-[700px] h-full pt-16 lg:pt-24 absolute right-0'>
+        <div className='w-full lg:w-[700px] h-full pt-16 lg:pt-24 relative lg:absolute right-0'>
 
           <div id='hero'>
             <About/>
