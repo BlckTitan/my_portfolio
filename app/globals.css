@@ -22,22 +22,22 @@
   }
 } */
 
+*{
+  font-family: "Fira Sans", "Inter", Arial, Helvetica, sans-serif;
+}
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
 body::selection{
   background-color: var(--tag-foreground);
   color: #fff;
 }
-.avatarContainer{
-  background-color: var(--foreground);
-}
+/* navigation styling */
 nav > a{
   display: flex;
   align-items: center;
@@ -57,10 +57,13 @@ a > span{
   height: 1px;
   margin-right: .7rem;
   background-color: var(--foreground);
+  transition: width .4s ease-in-out;
 }
 a:hover > span{
   width: 70px;
   background-color: #fff;
+  transition: width .4s ease-in-out;
+  
 }
 a.active > span{
   width: 70px;

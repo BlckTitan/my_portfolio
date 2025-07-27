@@ -4,6 +4,7 @@ import React, { useEffect, useState }  from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import Hero from './Hero'
+
 interface NavbarProps{
   hashLink: string
 }
@@ -22,7 +23,7 @@ export default function Navbar({hashLink}: NavbarProps) {
       <Hero/>
       
       {/* navigation link */}
-      <nav className='flex flex-col'>
+      <nav className='hidden lg:flex flex-col'>
         
         <a href="/#about" className={(isActive && hashLink === '#about') ? 'active' : '/'}>
           <span></span>
@@ -48,7 +49,7 @@ export default function Navbar({hashLink}: NavbarProps) {
       
 
       {/* social links */}
-      <div className='social_links w-full flex justify-start'>
+      <div className='social_links w-full flex justify-start mt-8 lg:mt-0'>
         <a href="/#">
           <i>
             <FaGithub />

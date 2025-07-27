@@ -10,6 +10,7 @@ import MouseGradientBackground from '@/components/MouseGradientBackground'
 import { useEffect, useState } from 'react';
 
 export default function Home() {
+
   const [hashLink, setHashLink] = useState<string>(typeof window !== 'undefined' ? window.location.hash : '')
  
   useEffect(() => {
@@ -26,10 +27,12 @@ export default function Home() {
     }
   }, [])
 
-  const scrollContent = (hash: any) =>{
-    const result = hash.slice(1);
+  const scrollContent = (hash: any) => {
+    const nav = hash.slice(1);
 
-    result.scrollIntoView()
+    const result = document.getElementById(nav);
+
+    if(result) return result.scrollIntoView({ behavior: "smooth", block: "center" })
   }
 
   return (
@@ -43,9 +46,9 @@ export default function Home() {
           <Navbar hashLink={hashLink}/>
         </div>
 
-        <div className='w-full lg:w-[700px] h-full pt-16 lg:pt-24 relative lg:absolute right-0'>
+        <div className='w-full lg:w-[700px] h-full pt-0 lg:pt-24 relative lg:absolute right-0'>
 
-          <div id='hero'>
+          <div id='about'>
             <About/>
           </div>
 

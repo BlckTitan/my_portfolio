@@ -3,7 +3,7 @@ import React from 'react'
 export default function About() {
   return (
     <div className='about mb-8 lg:mb-16'>
-      
+      <h3 className='inline-block lg:hidden mb-2 text-left text-white text-lg font-semibold'>ABOUT</h3>
       <p>
         I am a <b>Software Engineer | Frontend developer</b> based in Rivers state, Nigeria. 
         I am a frontend Web Developer with extensive experience in <b>HTML, CSS, Javascript, React, Redux, Tailwind CSS, and RESTful APIs, MongoDb, Convex</b>. 

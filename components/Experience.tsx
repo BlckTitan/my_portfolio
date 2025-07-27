@@ -19,6 +19,7 @@ const data = [
 export default function Experience() {
   return (
     <div id='experience'>
+      <h3 className='inline-block lg:hidden mb-2 text-left text-white text-lg font-semibold'>Experience</h3>
       {
         data.map((item) => (
           <div key={item.id} className='w-full h-fit mb-2 flex flex-col lg:flex-row justify-between items-start rounded-md p-4 hover:bg-white/15 hover:backdrop-blur-md'>

@@ -30,18 +30,22 @@ export default function Projects() {
 
   return (
     <div className='mt-16'>
+      
       {/* stack section */}
-      <div className='w-full flex justify-center items-center flex-wrap h-fit rounded-md bg-[var(--tag-foreground)] px-4 lg:px-24 py-4'>
-        {
-          stack.map((item) => (
-            <span key={item.id} className='w-fit h-fit px-4 py-2 mt-2 bg-[var(--background)] text-white mr-2 rounded-sm'>{item.stack}</span>
-          ))
-        }
+      <div className='w-full flex flex-col items-center h-fit rounded-md bg-[var(--tag-foreground)] px-4 lg:px-24 py-4'>
+        <h3 className='text-[var(--background)] text-2xl font-semibold'>My Stack</h3>
+        <div className='w-full flex justify-center items-center flex-wrap h-fit'>
+          {
+            stack.map((item) => (
+              <span key={item.id} className='w-fit h-fit px-4 py-2 mt-2 bg-[var(--background)] text-white mr-2 rounded-sm'>{item.stack}</span>
+            ))
+          }
+        </div>
       </div>
 
       {/* projects */}
       <div className='mt-16'>
-
+        <h3 className='inline-block lg:hidden mb-2 text-left text-white text-lg font-semibold'>Projects</h3>
         {
           data.map((item) => (
             <div key={item.id} className='w-full h-fit mb-2 flex flex-col lg:flex-row justify-between items-start rounded-md p-4 hover:bg-white/15 hover:backdrop-blur-md'>
