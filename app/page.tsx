@@ -42,7 +42,7 @@ export default function Home() {
 
       <div className='w-full lg:w-[1200px] relative flex flex-col lg:flex-row lg:justify-between'>
           
-        <div className='w-full lg:w-[400px] h-full relative lg:fixed py-16 lg:py-24 flex justify-center'>
+        <div className='w-full lg:w-[400px] h-full relative lg:fixed py-16 lg:py-24 flex lg:justify-center'>
           <Navbar hashLink={hashLink}/>
         </div>
 

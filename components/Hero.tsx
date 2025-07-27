@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section>
+    <section className=''>
 
-      <div className='w-full h-fit hidden lg:flex justify-center items-center mb-2'>
+      <div className='w-full h-fit hidden lg:flex lg:justify-center lg:items-center mb-2'>
         <div 
           className='bg-[var(--foreground)] absolute -z-10 w-[180px] lg:w-[210px] h-[180px] lg:h-[210px] rounded-full'
         />
