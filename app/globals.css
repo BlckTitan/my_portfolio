@@ -85,3 +85,19 @@ div.about b{
   font-weight: bolder;
   color: var(--tag-foreground);
 }
+.contact-text{
+  @apply flex items-center;
+}
+
+.contact-text:hover i,
+.contact-text:hover span{
+  @apply text-sm text-[var(--tag-foreground)];
+}
+.contact-text i,
+.contact-text span{
+  @apply text-sm text-gray-100;
+}
+
+.contact-text i{
+  @apply w-8;
+}
